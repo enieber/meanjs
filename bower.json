@@ -1,0 +1,20 @@
+{
+  "name": "mean",
+  "version": "0.0.0",
+  "authors": [
+    "Enieber <eniebercunha@gmail.com>"
+  ],
+  "moduleType": [
+    "amd",
+    "es6",
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
