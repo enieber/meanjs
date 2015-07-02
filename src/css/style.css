@@ -5,18 +5,15 @@ html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
-  
-}
+	font-size: 0.8em;
+ }
 body {
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-direction: column;
-  background: rgb(93,71,134);
 }
 
 main {
-    flex: 1;
+
 }
 article,
 aside,
@@ -40,8 +37,63 @@ video {
   display: inline-block;
   vertical-align: baseline;
 }
+section#formulario{
+	width: 100%;
+	height: 100%;
+	background: #000;
+	overflow: hidden;
+}
 
-.containe > .navbar-header,
+p#titulo{
+	font-size: 1em;
+	text-align: center;
+	margin-top: 2%; 
+}
+
+input[type="text"],input[type="password"]{
+	width: 50%;
+	height: 2em;
+	border: none;
+	font-size: 0.5em;
+	outline: none;
+	
+  	transition: border 0.3s;
+  }
+
+::-webkit-input-placeholder {
+   color: #483D68;
+   font: 1em verdana, arial, sans-serif;
+}
+ 
+
+input[type="text"]:focus,
+input[type="text"].focus,
+input[type="password"]:focus,
+input[type="password"].focus{
+	
+}
+
+#c_form{
+	background: white;
+	margin: 2% 20% 2% 20%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	width: 40%;
+	border-radius: 10px;
+}
+.input{
+	border: solid 5% #484572;
+	margin-top: 2%;
+	margin-bottom: 2%;
+ 	flex-wrap: wrap;
+	display:flex;
+	flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;	
+	
+}
+	.containe > .navbar-header,
 .containe-fluid > .navbar-header,
 .containe > .navbar-collapse,
 .containe-fluid > .navbar-collapse {
@@ -49,9 +101,9 @@ video {
   margin-left: -15px;
 }
 .container {
-      padding-left: 40%;
-      padding-right: 40%;
-      margin:0 auto;
+  padding-left: 40%;
+  padding-right: 40%;
+  margin:0 auto;
 }
 .containe {
     display: flex;
@@ -60,11 +112,10 @@ video {
 
 }
 form{
-    display: flex;
-    justify-content: center;
+	
 }
-.boxs{
-	background: white;
+.box{
+	
 	margin:auto;
 	display: flex;
 }
@@ -85,7 +136,7 @@ form{
 	-moz-transition: opacity 400ms ease-in;
 	transition: opacity 400ms ease-in;
 	pointer-events: none;
-	overflow:scroll; /* activa scroll da página se a modal for muito comprida */	
+	overflow:scroll; /* activa scroll da pÃ¡gina se a modal for muito comprida */	
 }
 
  .modalDialog:target {
@@ -110,8 +161,9 @@ form{
 		position: absolute;	  
 	}
 
-#title > h1{
+h1{
 	text-align: center;
+	font-size: 1.5em;
 }
 
 #tab_title > h2{
@@ -149,6 +201,7 @@ input[type = search]{
 	  a,
 	  a:visited {
 	    text-decoration: underline;
+	    font-size: 1em;
 	  }
 	  a[href]:after {
 	    content: " (" attr(href) ")";
@@ -181,6 +234,7 @@ input[type = search]{
 	  h3 {
 	    orphans: 3;
 	    widows: 3;
+	    font-size: 1em;
 	  }
 	  h2,
 	  h3 {
@@ -218,7 +272,7 @@ input[type = search]{
 
 
 
-/* device 
+/* device */
 
 @media (min-device-width:25em) and (max-device-width:48em){
 	html{ 
@@ -260,7 +314,7 @@ input[type = search]{
 /
 @media only screen and (max-width:25em), only screen and (max-device-width:25em){
 	html{ 
-	 font-size: 1.25em;
+	 font-size: 2.25em;
 	}
 	body{
 		margin:0;
@@ -296,7 +350,7 @@ input[type = search]{
 }
 @media (min-width:25em) and (max-width:48em){
 	html{ 
-	 font-size: 1.5em;
+	 font-size: 2.5em;
 	}
 	.pan{
 		width:25em;	
@@ -332,7 +386,7 @@ input[type = search]{
 
 @media (min-width:48em) and (max-width:62em){
 	html{ 
-	 font-size: 1.75em;
+	 font-size: 2.75em;
 	}
 	.pan{
 		width: 40em;
@@ -406,7 +460,7 @@ input[type = search]{
 
 @media (min-width:75em){
 	html{ 
-	 font-size: 2.15em;
+	 font-size: 3em;
 	}
 	.pan{
 		width: 75em;
@@ -434,4 +488,3 @@ input[type = search]{
 	}
 	
 }
-*/
